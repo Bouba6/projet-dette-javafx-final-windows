@@ -1,0 +1,91 @@
+/* Style général pour le formulaire */
+.VBox {
+    -fx-spacing: 10px;
+    /* Espace entre les enfants de VBox */
+    -fx-background-color: #0a0a0a;
+    /* Couleur de fond de VBox */
+    -fx-padding: 20px;
+    /* Padding autour de la VBox */
+}
+
+/* Style des étiquettes */
+.label {
+    -fx-font-size: 14px;
+    /* Taille de la police */
+    -fx-font-weight: bold;
+    /* Gras */
+    -fx-text-fill: #333333;
+    /* Couleur du texte */
+    -fx-padding: 5px;
+    /* Rembourrage autour de l'étiquette */
+    -fx-margin-top: 10px;
+    /* Espacement au-dessus de l'étiquette */
+}
+
+/* Style des champs de texte et mots de passe */
+.text-field,
+.password-field {
+    -fx-font-size: 14px;
+    /* Taille de la police */
+    -fx-padding: 10px;
+    /* Rembourrage intérieur */
+    -fx-background-color: #f9f9f9;
+    /* Couleur de fond */
+    -fx-border-color: #cccccc;
+    /* Couleur de la bordure */
+    -fx-border-radius: 5px;
+    /* Coins arrondis */
+    -fx-border-width: 1px;
+    /* Épaisseur de la bordure */
+    -fx-margin-top: 10px;
+    /* Espacement au-dessus des champs */
+    -fx-margin-bottom: 10px;
+    /* Espacement en dessous des champs */
+}
+
+/* Style au survol et au focus des champs de texte */
+.text-field:hover,
+.password-field:hover {
+    -fx-border-color: #4CAF50;
+    /* Couleur de la bordure au survol */
+}
+
+.text-field:focused,
+.password-field:focused {
+    -fx-border-color: #4CAF50;
+    /* Couleur de la bordure au focus */
+}
+
+/* Style des boutons */
+.button {
+    -fx-background-color: #7480ce;
+    /* Couleur de fond du bouton */
+    -fx-text-fill: white;
+    /* Couleur du texte */
+    -fx-font-size: 16px;
+    /* Taille de la police */
+    -fx-padding: 10px 20px;
+    /* Rembourrage du bouton */
+    -fx-border-radius: 5px;
+    /* Coins arrondis du bouton */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 5, 0.0, 0, 1);
+    /* Ombre portée */
+}
+
+/* Style au survol du bouton */
+.button:hover {
+    -fx-background-color: #45a049;
+    /* Couleur de fond au survol */
+}
+
+/* Style pour les messages d'erreur */
+.error-label {
+    -fx-text-fill: red;
+    /* Couleur du texte pour les erreurs */
+    -fx-font-size: 12px;
+    /* Taille de la police pour les erreurs */
+    -fx-padding: 5px;
+    /* Rembourrage autour du message d'erreur */
+    -fx-margin-top: 10px;
+    /* Espacement au-dessus du message d'erreur */
+}

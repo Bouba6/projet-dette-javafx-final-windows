@@ -1,0 +1,62 @@
+/* General style for the TableView */
+.table-view {
+    -fx-background-color: #f0f0f0;
+    /* Background color for the entire table */
+    -fx-border-color: #cccccc;
+    /* Border color */
+    -fx-border-width: 1px;
+    /* Border width */
+    -fx-padding: 10px;
+    /* Padding around the table */
+}
+
+/* Style for TableHeader */
+.table-view .table-header {
+    -fx-background-color: #4CAF50;
+    /* Background color for header */
+    -fx-text-fill: white;
+    /* Text color for header */
+    -fx-font-weight: bold;
+    /* Bold text */
+}
+
+/* Style for TableColumn Headers */
+.table-view .table-header-outer {
+    -fx-border-color: transparent;
+    /* Remove outer border */
+}
+
+.table-view .table-column-header {
+    -fx-background-color: #4CAF50;
+    /* Header background color */
+    -fx-padding: 5px;
+    /* Padding for header */
+}
+
+/* Style for TableCells */
+.table-view .table-row-cell {
+    -fx-background-color: white;
+    /* Background color for rows */
+    -fx-text-fill: #333;
+    /* Text color for rows */
+}
+
+/* Hover effect for TableCells */
+.table-view .table-row-cell:hover {
+    -fx-background-color: #e0f7e0;
+    /* Background color on hover */
+}
+
+/* Style for selected TableRows */
+.table-view .table-row-cell:filled:selected {
+    -fx-background-color: #81c784;
+    /* Background color for selected rows */
+    -fx-text-fill: white;
+    /* Text color for selected rows */
+}
+
+/* Style for the last column */
+.table-view .table-column-header:last-child {
+    -fx-border-right-width: 0;
+    /* Remove right border for last column */
+}

@@ -1,0 +1,78 @@
+/* style.css */
+
+/* Styles généraux pour le VBox */
+.vbox {
+    -fx-background-color: #f0f0f0;
+    /* Couleur de fond */
+    -fx-padding: 20;
+    /* Padding autour du contenu */
+    -fx-spacing: 15;
+    /* Espacement entre les éléments */
+    -fx-width: auto;
+    /* Largeur */
+    -fx-height: auto;
+}
+
+/* Style pour les boutons */
+.button {
+    -fx-background-color: #007bff;
+    /* Couleur de fond */
+    -fx-text-fill: white;
+    /* Couleur du texte */
+    -fx-font-size: 14px;
+    /* Taille de la police */
+    -fx-padding: 10;
+    /* Padding interne */
+    -fx-border-radius: 5;
+    /* Coins arrondis */
+    -fx-background-radius: 5;
+    /* Coins arrondis */
+}
+
+/* Effet au survol pour les boutons */
+.button:hover {
+    -fx-background-color: #0056b3;
+    /* Couleur de fond au survol */
+}
+
+/* Style pour le texte d'accueil */
+.text {
+    -fx-font-size: 20px;
+    /* Taille de la police */
+    -fx-font-weight: bold;
+    /* Gras */
+    -fx-text-fill: #333;
+    /* Couleur du texte */
+}
+
+
+.header {
+    font-size: 24px;
+    /* Ajustez la taille du texte de l'en-tête */
+    text-fill: #2f13aa;
+    /* Couleur du texte de l'en-tête */
+}
+
+.button1 {
+    prefWidth: 250px;
+    /* Largeur fixe pour tous les boutons */
+    prefHeight: 40px;
+    /* Hauteur fixe pour tous les boutons */
+    background-color: #4CAF50;
+    /* Couleur de fond pour les boutons */
+    text-fill: white;
+    /* Couleur du texte des boutons */
+    font-size: 14px;
+    /* Taille du texte des boutons */
+    border-radius: 5px;
+    /* Coins arrondis pour les boutons */
+    border: none;
+    /* Pas de bordure */
+    padding: 10px;
+    /* Espacement interne */
+}
+
+.button1:hover {
+    background-color: #45a049;
+    /* Couleur de fond au survol */
+}

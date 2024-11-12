@@ -10,19 +10,19 @@ repositories:
     # detaildetteRepository: detteproject.Repository.List.DetailRepository
 
 
-    # userRepository: detteproject.Repository.jpa.RepositoryJpaUser
-    # clientRepository: detteproject.Repository.jpa.RepositoryJpaClient
-    # detteRepository:  detteproject.Repository.jpa.RepositorieJpaDette
-    # articleRepository: detteproject.Repository.jpa.RepositorieJpaArticle
-    # paiementRepository: detteproject.Repository.jpa.RepositorieJpaPaiement
-    # detaildetteRepository: detteproject.Repository.jpa.RepositorieJpaDetail
+    userRepository: detteproject.Repository.jpa.RepositoryJpaUser
+    clientRepository: detteproject.Repository.jpa.RepositoryJpaClient
+    detteRepository:  detteproject.Repository.jpa.RepositorieJpaDette
+    articleRepository: detteproject.Repository.jpa.RepositorieJpaArticle
+    paiementRepository: detteproject.Repository.jpa.RepositorieJpaPaiement
+    detaildetteRepository: detteproject.Repository.jpa.RepositorieJpaDetail
 
-    userRepository: detteproject.Repository.Bd.UserRepositoryBD
-    clientRepository: detteproject.Repository.Bd.ClientRepositoryBD
-    detteRepository:  detteproject.Repository.Bd.DetteRepositoryBD
-    articleRepository: detteproject.Repository.Bd.ArticleRepositoryBD
-    paiementRepository: detteproject.Repository.Bd.PaiementRepositoryBD
-    detaildetteRepository: detteproject.Repository.Bd.DetailRepositoryBD
+    # userRepository: detteproject.Repository.Bd.UserRepositoryBD
+    # clientRepository: detteproject.Repository.Bd.ClientRepositoryBD
+    # detteRepository:  detteproject.Repository.Bd.DetteRepositoryBD
+    # articleRepository: detteproject.Repository.Bd.ArticleRepositoryBD
+    # paiementRepository: detteproject.Repository.Bd.PaiementRepositoryBD
+    # detaildetteRepository: detteproject.Repository.Bd.DetailRepositoryBD
 
    
 

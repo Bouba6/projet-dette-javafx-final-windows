@@ -16,7 +16,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="450.0" prefWidth="620.0" stylesheets="file:/C:/Users/Booba/Documents/java2/ProjetfirstSemester/projetdette/src/main/resources/css/table.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.ClientTableController">
+<AnchorPane prefHeight="450.0" prefWidth="620.0" style="-fx-background-color: white;" stylesheets="file:/C:/Users/Booba/Documents/java2/ProjetfirstSemester/projetdette/src/main/resources/css/table.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.ClientTableController">
 
     <children>
         <TableView fx:id="clientTableView" layoutX="15.0" layoutY="172.0" prefHeight="241.0" prefWidth="584.0" style="-fx-padding: 0px; -fx-border-radius: 10px;">
@@ -66,13 +66,13 @@
                   </LinearGradient>
                </fill>
             </Circle>
-            <Label layoutX="65.0" layoutY="21.0" prefHeight="17.0" prefWidth="40.0" fx:id="Labelnom" textFill="#f4f1f1">
+            <Label fx:id="Labelnom" layoutX="65.0" layoutY="21.0" prefHeight="17.0" prefWidth="40.0" textFill="#f4f1f1">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label layoutX="66.0" layoutY="38.0" fx:id="Labelmail" textFill="#efefef" />
-            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="20.0" layoutY="19.0"  pickOnBounds="true" preserveRatio="true">
+            <Label fx:id="Labelmail" layoutX="66.0" layoutY="38.0" textFill="#efefef" />
+            <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="20.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@\C:\Users\Booba\Documents\java2\Projet_Final_Windows\detteproject\projetdette\src\main\java\detteproject\img\homme.png" />
                </image>

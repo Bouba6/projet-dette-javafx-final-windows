@@ -30,19 +30,32 @@ public class DetteView extends ViewImpl<Dette> {
 
     @Override
     public Dette saisie() {
+        int attempts = 0;
+        Client client = null;
 
-        scanner.nextLine();
-        System.out.println("Entrer le numero de telephone du client");
-        String tel = scanner.nextLine();
-        Client client = clientService.find(tel);
-        if (client == null) {
-            System.out.println("Client non existant");
-            return null;
-        } else {
+        // Allow up to 3 attempts to find the client by phone number
+        while (attempts < 3 && client == null) {
+            scanner.nextLine(); // Clear the scanner buffer
+            System.out.println("Entrer le numero de telephone du client:");
+            String tel = scanner.nextLine();
 
-            return askDette(client);
+            // Attempt to find the client by phone number
+            client = clientService.find(tel);
 
+            if (client == null) {
+                attempts++;
+                if (attempts < 3) {
+                    System.out.println("Client non existant. Il vous reste " + (3 - attempts)
+                            + " tentative(s). Veuillez réessayer.");
+                } else {
+                    System.out.println("Client non existant après 3 tentatives.");
+                    return null; // Return null if the client is not found within 3 attempts
+                }
+            }
         }
+
+        // If client is found, proceed with creating a Dette
+        return askDette(client);
     }
 
     public void Relance(Client client) {

@@ -37,7 +37,7 @@
             <PasswordField fx:id="passwordField" disable="true" layoutX="353.0" layoutY="82.0" prefHeight="33.0" prefWidth="169.0" promptText="Entrer un password" />
             <Button fx:id="buttonCreate" disable="true" layoutX="303.0" layoutY="228.0" onAction="#handleCreateUser" style="-fx-background-color: white;" text="Create User" textAlignment="CENTER" textFill="#242323" />
             <Button layoutX="189.0" layoutY="230.0" prefHeight="25.0" prefWidth="77.0" style="-fx-background-color: red; -fx-text-fill: white;" text="Cancel" textFill="#f2ecec" />
-            <Label layoutX="218.0" layoutY="6.0" style="-fx-underline: true;" text="Creer User" textFill="#f4f2f2">
+            <Label layoutX="197.0" layoutY="6.0" style="-fx-underline: true;" text="CREATE USER" textFill="#f4f2f2">
                <font>
                   <Font name="System Bold" size="26.0" />
                </font>

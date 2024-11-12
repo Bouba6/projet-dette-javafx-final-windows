@@ -31,7 +31,7 @@
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Label>
-    <TextField fx:id="detteIdTextField" layoutX="150.0" layoutY="111.0" prefHeight="25.0" prefWidth="328.0" promptText="Entrer l'id de la dette" disable="true" />
+    <TextField fx:id="detteIdTextField" disable="true" layoutX="150.0" layoutY="111.0" prefHeight="25.0" prefWidth="328.0" promptText="Entrer l'id de la dette" />
 
 
     <!-- Label et TextField pour le montant -->
@@ -39,7 +39,7 @@
          <font>
             <Font name="System Bold Italic" size="12.0" />
          </font></Label>
-    <TextField fx:id="montantTextField" layoutX="149.0" layoutY="154.0" prefHeight="25.0" prefWidth="328.0" promptText="Entrer le montant du paiement"  disable="true" />
+    <TextField fx:id="montantTextField" disable="true" layoutX="149.0" layoutY="154.0" prefHeight="25.0" prefWidth="328.0" promptText="Entrer le montant du paiement" />
 
      <TableView fx:id="detteTableView" layoutX="24.0" layoutY="250.0" prefHeight="96.0" prefWidth="456.0" style="-fx-background-radius: 10px;">
      <columns>
@@ -51,8 +51,8 @@
     </TableView>
 
     <!-- Bouton pour valider le paiement -->
-    <Button fx:id="validerPaiementButton" layoutX="149.0" disable="true" layoutY="197.0" onAction="#handleValiderPaiement" prefHeight="25.0" prefWidth="124.0" style="-fx-border-radius: 5px;" text="Valider le paiement" />
-      <Label layoutX="213.0" layoutY="15.0" style="-fx-underline: true;" text="Paiement" textFill="#f2eeee">
+    <Button fx:id="validerPaiementButton" disable="true" layoutX="149.0" layoutY="197.0" onAction="#handleValiderPaiement" prefHeight="25.0" prefWidth="124.0" style="-fx-border-radius: 5px;" text="Valider le paiement" />
+      <Label layoutX="213.0" layoutY="15.0" style="-fx-underline: true;" text="PAIEMENT" textFill="#f2eeee">
          <font>
             <Font name="System Bold" size="21.0" />
          </font>

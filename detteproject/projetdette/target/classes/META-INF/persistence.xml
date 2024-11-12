@@ -34,6 +34,7 @@
         <class>detteproject.data.entities.Article</class>
         <class>detteproject.data.entities.DetailDette</class>
         <class>detteproject.data.entities.Dette</class>
+        <class>detteproject.data.entities.Paiement</class>
         <exclude-unlisted-classes>true</exclude-unlisted-classes>
         <properties>
 			<!-- Propriétés de configuration de la base de données -->

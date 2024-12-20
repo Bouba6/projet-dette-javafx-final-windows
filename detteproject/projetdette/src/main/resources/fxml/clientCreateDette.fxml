@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.clientCreateDetteController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="620.0" stylesheets="@../css/table.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.clientCreateDetteController">
    <children>
       <AnchorPane layoutX="61.0" layoutY="67.0" prefHeight="376.0" prefWidth="464.0" style="-fx-background-color: #111827; -fx-background-radius: 5px;">
          <children>

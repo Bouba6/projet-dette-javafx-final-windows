@@ -22,7 +22,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane fitToWidth="true" prefHeight="450.0" prefWidth="633.0" style="-fx-opacity: 1; -fx-background-color: white;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.DetteEcController">
+<ScrollPane fitToWidth="true" prefHeight="450.0" prefWidth="633.0" style="-fx-opacity: 1; -fx-background-color: white;" stylesheets="@../css/table.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.DetteEcController">
     <content>
         <AnchorPane prefHeight="917.0" prefWidth="633.0" style="-fx-background-color: white;">
             <TextField fx:id="phoneNumberField" layoutX="22.0" layoutY="103.0" prefWidth="200.0" promptText="Enter client's phone number" />

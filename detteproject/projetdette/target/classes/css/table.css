@@ -1,62 +1,126 @@
-/* General style for the TableView */
+/* TableView Styling */
 .table-view {
-    -fx-background-color: #f0f0f0;
-    /* Background color for the entire table */
-    -fx-border-color: #cccccc;
-    /* Border color */
-    -fx-border-width: 1px;
-    /* Border width */
-    -fx-padding: 10px;
-    /* Padding around the table */
-}
+    -fx-border-color: #191825;
 
-/* Style for TableHeader */
-.table-view .table-header {
-    -fx-background-color: #4CAF50;
-    /* Background color for header */
-    -fx-text-fill: white;
-    /* Text color for header */
-    -fx-font-weight: bold;
-    /* Bold text */
-}
+    -fx-border-radius: 10px;
 
-/* Style for TableColumn Headers */
-.table-view .table-header-outer {
-    -fx-border-color: transparent;
-    /* Remove outer border */
-}
-
-.table-view .table-column-header {
-    -fx-background-color: #4CAF50;
-    /* Header background color */
+    -fx-background-radius: 10px;
     -fx-padding: 5px;
-    /* Padding for header */
-}
-
-/* Style for TableCells */
-.table-view .table-row-cell {
+    -fx-border-width: 3px;
     -fx-background-color: white;
-    /* Background color for rows */
-    -fx-text-fill: #333;
-    /* Text color for rows */
+
 }
 
-/* Hover effect for TableCells */
-.table-view .table-row-cell:hover {
-    -fx-background-color: #e0f7e0;
-    /* Background color on hover */
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color: #111827;
+    /* Couleur de la poignée de défilement */
+    -fx-background-radius: 5px;
 }
 
-/* Style for selected TableRows */
-.table-view .table-row-cell:filled:selected {
-    -fx-background-color: #81c784;
-    /* Background color for selected rows */
+
+/* TableColumn Headers */
+
+
+.table-view .column-header {
+    -fx-background-color: #111827;
+    -fx-border-radius: 10px 10px 0 0;
+}
+
+.table-view .column-header .label {
     -fx-text-fill: white;
-    /* Text color for selected rows */
+
+    -fx-font-weight: bold;
+
+    -fx-font-size: 14px;
+
 }
 
-/* Style for the last column */
-.table-view .table-column-header:last-child {
-    -fx-border-right-width: 0;
-    /* Remove right border for last column */
+
+.table-row-cell {
+    -fx-background-color: transparent;
+
+}
+
+.table-row-cell:filled {
+    -fx-background-color: #ffffff;
+    /* Fond des lignes remplies */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #4CAF50;
+    /* Couleur de sélection */
+    -fx-text-fill: white;
+    /* Couleur du texte en sélection */
+}
+
+/* Table Cells */
+.table-cell {
+    -fx-padding: 10px;
+    /* Espacement interne */
+    -fx-text-fill: #333333;
+    /* Couleur du texte */
+    -fx-font-size: 13px;
+    /* Taille de la police */
+    -fx-border-width: 0 0 1px 0;
+    /* Bordure uniquement en bas */
+    -fx-border-color: #dddddd;
+    /* Couleur de la bordure */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Changer la couleur de fond du ScrollPane */
+.scroll-pane {
+    -fx-background-color: #f8f9fa;
+    /* Couleur de fond principale */
+    /* -fx-background: #f8f9fa;
+    -fx-border-color: #111827;
+    -fx-border-width: 2px;
+    -fx-border-radius: 5px; */
+    /* Arrondi de la bordure */
+    /* -fx-padding: 10px; */
+    /* Espacement interne */
+}
+
+/* Personnaliser les barres de défilement */
+.scroll-pane .viewport {
+    /* -fx-background-color: #ffffff; */
+    /* Couleur de fond de la zone de contenu */
+}
+
+.scroll-bar:horizontal .thumb,
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #191825;
+    /* Couleur de la "poignée" */
+    -fx-background-radius: 10px;
+    /* Coins arrondis */
+}
+
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+    -fx-background-color: #ddd;
+    /* Couleur de la "piste" */
+}
+
+.scroll-bar:horizontal .increment-button,
+.scroll-bar:vertical .increment-button,
+.scroll-bar:horizontal .decrement-button,
+.scroll-bar:vertical .decrement-button {
+    -fx-background-color: transparent;
+    /* Supprime la couleur des boutons */
+    -fx-padding: 0;
+}
+
+/* Ajuster la couleur au survol */
+.scroll-bar .thumb:hover {
+    -fx-background-color: #191825;
+    /* Couleur de la poignée au survol */
 }

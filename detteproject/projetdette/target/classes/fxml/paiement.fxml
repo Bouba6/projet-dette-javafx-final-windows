@@ -16,7 +16,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<Pane prefHeight="450.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.PaiementController">
+<Pane prefHeight="450.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@../css/table.css" fx:controller="detteproject.controller.PaiementController">
 <Pane layoutX="54.0" layoutY="74.0" prefHeight="367.0" prefWidth="504.0" style="-fx-background-color: #111827; -fx-background-radius: 5px;">
     <!-- Label et ComboBox pour le client -->
     <Label layoutX="21.0" layoutY="76.0" text="telephone du client :" textFill="#f8f5f5">
@@ -46,6 +46,7 @@
          <TableColumn fx:id="idColumn" text="Id" />
         <TableColumn fx:id="debtorNameColumn" prefWidth="127.99996948242188" text="Nom du débiteur" />
         <TableColumn fx:id="amountColumn" prefWidth="114.0" text="Montant" />
+        <TableColumn fx:id="amountColumnRestant" prefWidth="114.0" text="MontantRestant" />
         <TableColumn fx:id="etatColumn" minWidth="0.0" prefWidth="122.0" text="État" />
     </columns>
     </TableView>

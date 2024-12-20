@@ -17,7 +17,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="450.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.UserListController">
+<AnchorPane prefHeight="450.0" prefWidth="620.0" stylesheets="@../css/table.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.UserListController">
    <children>
       <ComboBox fx:id="roleComboBox" layoutX="29.0" layoutY="104.0" prefWidth="120.0" promptText="Filtrer par " style="-fx-background-color: #111827;" />
       <Button layoutX="510.0" layoutY="100.0" onAction="#handleCreateUser" prefHeight="25.0" prefWidth="82.0" style="-fx-background-color: #111827;" text="Ajouter" textFill="#fffbfb" />

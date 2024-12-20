@@ -52,6 +52,9 @@ public class PaiementController extends BoutiquierController {
     private TableColumn<Dette, Double> amountColumn;
 
     @FXML
+    private TableColumn<Dette, Double> amountColumnRestant;
+
+    @FXML
     private TableColumn<Dette, String> etatColumn;
 
     @FXML
@@ -105,6 +108,9 @@ public class PaiementController extends BoutiquierController {
                 .setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getClient().getNom()));
         amountColumn
                 .setCellValueFactory(cellData -> new SimpleDoubleProperty(cellData.getValue().getMontant()).asObject());
+        amountColumnRestant
+                .setCellValueFactory(
+                        cellData -> new SimpleDoubleProperty(cellData.getValue().getMontantRestant()).asObject());
         etatColumn.setCellValueFactory(cellData -> new SimpleStringProperty(cellData.getValue().getEtat().toString()));
 
     }
@@ -182,6 +188,8 @@ public class PaiementController extends BoutiquierController {
             // Ajouter la logique pour enregistrer le paiement de la dette
 
             showAlert("Succès", "Paiement enregistré avec succès !");
+            detteIdTextField.clear();
+            montantTextField.clear();
         } catch (NumberFormatException e) {
             showAlert("Erreur", "Le montant doit être un nombre valide !");
         }

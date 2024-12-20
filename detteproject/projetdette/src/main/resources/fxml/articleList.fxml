@@ -16,7 +16,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.ListArticleController">
+<Pane maxHeight="-Infinity" stylesheets="@../css/table.css" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.ListArticleController">
    <children>
       <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutY="68.0" prefHeight="50.0" prefWidth="618.0" style="-fx-underline: true;" text="Liste des Articles" textAlignment="CENTER" textFill="#111827">
          <font>

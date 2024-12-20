@@ -15,7 +15,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.ClientSansCompteController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"  prefHeight="450.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/23.0.1" stylesheets="@../css/table.css" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.ClientSansCompteController">
    <children>
       <TextField fx:id="telephoneField" layoutX="47.0" layoutY="93.0" prefHeight="25.0" prefWidth="204.0" promptText="Entrer le numero de telephone" />
       <Button layoutX="282.0" layoutY="92.0" mnemonicParsing="false" onAction="#searchClient" style="-fx-background-color: #111827;" text="Search" textFill="#f4f2f2" />

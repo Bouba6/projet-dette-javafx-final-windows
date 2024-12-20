@@ -16,7 +16,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="450.0" prefWidth="620.0" style="-fx-background-color: white;" stylesheets="file:/C:/Users/Booba/Documents/java2/ProjetfirstSemester/projetdette/src/main/resources/css/table.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.ClientTableController">
+<AnchorPane prefHeight="450.0" prefWidth="620.0" style="-fx-background-color: white;" stylesheets="@../css/table.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.ClientTableController">
 
     <children>
         <TableView fx:id="clientTableView" layoutX="15.0" layoutY="172.0" prefHeight="241.0" prefWidth="584.0" style="-fx-padding: 0px; -fx-border-radius: 10px;">

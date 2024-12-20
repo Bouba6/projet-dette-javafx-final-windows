@@ -17,7 +17,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<ScrollPane prefHeight="450.0" prefWidth="623.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.DetteListClient">
+<ScrollPane prefHeight="450.0" prefWidth="623.0" stylesheets="@../css/table.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="detteproject.controller.DetteListClient">
    <content>
       <AnchorPane prefHeight="936.0" prefWidth="620.0" style="-fx-background-color: white;">
       <ComboBox fx:id="etatComboBox" layoutX="6.0" layoutY="91.0" prefWidth="120.0" style="-fx-background-color: #111827;" />
@@ -32,7 +32,10 @@
                   
               </columns>
           </TableView>
-         <Button layoutX="503.0" layoutY="89.0" mnemonicParsing="false" onAction="#createDette" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #111827;" text="Ajouter" textFill="#f6f6f6" />
+         <Button layoutX="503.0" layoutY="89.0" mnemonicParsing="false" onAction="#createDette" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: #111827;" text="Ajouter" textFill="#f6f6f6">
+            <font>
+               <Font name="System Bold" size="12.0" />
+            </font></Button>
          <Pane prefHeight="63.0" prefWidth="620.0" style="-fx-background-color: #111827;">
             <children>
                <MenuButton layoutX="150.0" layoutY="25.0" style="-fx-text-fill: white; -fx-background-color: white; -fx-font-size: 10px; -fx-padding: 3 10; -fx-background-radius: 8px;" text="Dette">
@@ -56,28 +59,31 @@
             </children>
          </Pane>
          <TextField fx:id="idDette" layoutX="11.0" layoutY="489.0" promptText="Entrer l'id de la dette" />
-         <Button layoutX="190.0" layoutY="487.0" mnemonicParsing="false" onAction="#showArticle" text="search" />
+         <Button layoutX="190.0" layoutY="487.0" mnemonicParsing="false" onAction="#showArticle" style="-fx-background-color: #111827;" text="search" textFill="WHITE">
+            <font>
+               <Font name="System Italic" size="12.0" />
+            </font></Button>
          <Label layoutX="194.0" layoutY="430.0" style="-fx-underline: true;" text="Infos d'une dette">
             <font>
                <Font name="System Bold" size="24.0" />
             </font>
          </Label>
-         <TableView fx:id="ArticleTableView" layoutX="13.0" layoutY="552.0" prefHeight="153.0" prefWidth="555.0" style="-fx-background-radius: 10px;">
+         <TableView fx:id="ArticleTableView" layoutX="13.0" layoutY="552.0" prefHeight="153.0" prefWidth="591.0" style="-fx-background-radius: 10px;">
             <columns>
                <TableColumn fx:id="id" prefWidth="102.0" text="id" />
-               <TableColumn fx:id="libelle" prefWidth="126.0" text="Libelle" />
-               <TableColumn fx:id="prix" prefWidth="164.0" text="prix" />
-               <TableColumn fx:id="quantite" prefWidth="161.0" text="quantite" />
+               <TableColumn fx:id="libelle" prefWidth="139.3332748413086" text="Libelle" />
+               <TableColumn fx:id="prix" prefWidth="160.00006103515625" text="prix" />
+               <TableColumn fx:id="quantite" prefWidth="176.00009155273438" text="quantite" />
             </columns>
          </TableView>
-         <TableView fx:id="PaiementTableView" layoutX="16.0" layoutY="760.0" prefHeight="153.0" prefWidth="549.0" style="-fx-background-radius: 10px;">
+         <TableView fx:id="PaiementTableView" layoutX="18.0" layoutY="768.0" prefHeight="153.0" prefWidth="583.0" style="-fx-background-radius: 10px;">
             <columns>
-               <TableColumn fx:id="idPaiement" prefWidth="102.0" text="id" />
-               <TableColumn fx:id="montant" prefWidth="246.0000228881836" text="montant" />
-               <TableColumn fx:id="datePaiement" prefWidth="151.33334350585938" text="date" />
+               <TableColumn fx:id="idPaiement" prefWidth="137.33334922790527" text="id" />
+               <TableColumn fx:id="montant" prefWidth="234.66661071777344" text="montant" />
+               <TableColumn fx:id="datePaiement" prefWidth="195.33334350585938" text="date" />
             </columns>
          </TableView>
-         <Label layoutX="189.0" layoutY="714.0" style="-fx-underline: true;" text="Liste des paiements">
+         <Label layoutX="189.0" layoutY="722.0" style="-fx-underline: true;" text="Liste des paiements">
             <font>
                <Font name="System Bold" size="22.0" />
             </font>
